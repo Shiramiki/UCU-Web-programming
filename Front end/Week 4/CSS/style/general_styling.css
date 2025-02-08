@@ -23,3 +23,9 @@ body {
 p {
     columns: 2;
 }
+
+/* Universal Selector */
+
+*{
+    color:violet;
+}
