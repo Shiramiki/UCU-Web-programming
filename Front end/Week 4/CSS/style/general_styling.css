@@ -27,5 +27,25 @@ p {
 /* Universal Selector */
 
 *{
-    color:violet;
+    color:blueviolet;
+}
+
+/* Class Selector */
+.buttons{
+    color:aqua;
+    background-color:white;
+    height:30px;
+    display:block;
+
+}
+
+/* Id Selector */
+
+#main_title{
+    color:bisque
+}
+
+/* Grouping Selectors */
+h1, h2, h3 {
+    background-color azure
 }
