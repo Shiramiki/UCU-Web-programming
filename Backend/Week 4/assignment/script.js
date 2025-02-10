@@ -63,12 +63,15 @@ function promiseFetcher(){
         let htmlContent = "<h2>Fetching with Promise</h2><ul>";
         data.data.forEach(item => {
             htmlContent += `<li>
-          <strong>ID:</strong> ${item[8]} 
-          <strong>Name:</strong> ${item[11]} 
-          <strong>Type:</strong> ${item[12]} l-
-          <strong>Breed:</strong> ${item[16]} 
-          <strong>Age:</strong> ${item[13]}
-        </li>`
+          <strong>ID:</strong> ${item[8]} &nbsp&nbsp&nbsp
+          <strong>Name:</strong> ${item[11]} &nbsp&nbsp&nbsp
+          <ul>
+                <li><strong>Type:</strong> ${item[12]} </li>
+                <li><strong>Breed:</strong> ${item[16]}</li> 
+                <li><strong>Age:</strong> ${item[13]}</li>
+          </ul> 
+        </li>
+        <br>`
       });
       htmlContent += "</ul>";
 
@@ -80,3 +83,30 @@ function promiseFetcher(){
 }
 
 
+// Await / async
+async function asyncDataFetching(){
+    try{
+        const response =await fetch("https://data.montgomerycountymd.gov/api/views/e54u-qx42/rows.json?");
+
+        if (!response.ok){
+            throw new Error("The network is not okay");
+        }
+        const data = await response.json();
+        let htmlContent = "<h2>Fetch data with Async/ Await</h2><ul>";
+        data.data.forEach(item =>{
+            htmlContent += `<li>
+        <strong>ID:</strong> ${item[8]}
+        <strong>Name:</strong> ${item[11]}
+        
+      </li>`;
+        });
+
+        htmlContent += "</ul>";
+        document.getElementById("displaydiv3").innerHTML = htmlContent;
+        
+        
+  }     
+        catch (error) {
+            document.getElementById("displaydiv3").innerHTML = `<p>"Encountered a Fetching error: ${error}</p>`
+    }
+}
