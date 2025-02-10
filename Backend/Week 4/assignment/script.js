@@ -28,7 +28,6 @@ function displayData(){
                     </tr>`
 
             data.data.forEach(item => {
-                // Replace 'item[4]' with the correct property indices based on your data structure
                 htmlContent += `
                 <tr>
                     <td>${item[8]}</td>
