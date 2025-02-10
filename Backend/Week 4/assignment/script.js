@@ -95,7 +95,7 @@ async function asyncDataFetching(){
         let htmlContent = "<h2>Fetch data with Async/ Await</h2><ul>";
         data.data.forEach(item =>{
             htmlContent += `<li>
-        <strong>ID:</strong> ${item[8]}
+        <strong>ID:</strong> ${item[8]}&nbsp&nbsp&nbsp
         <strong>Name:</strong> ${item[11]}
         
       </li>`;
