@@ -1,0 +1,87 @@
+html, body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding:0;
+    background-color:beige;
+  }
+#Header, #personals {
+    display: flex;
+    justify-content:space-evenly;
+
+}
+
+#Header div, #personals div{
+    /* border : 1px solid blue; */
+    width:45%;
+    padding: 5%;
+    /* height:fit; */
+    
+}
+#Main{
+    /* border:1px solid brown; */
+    width:100%;
+    display:flex;
+    justify-content:center;
+    padding: 5px;
+    
+}
+#Media {
+    width :560px; 
+    height:315px;
+    border: 1px solid red;
+    overflow:hidden;
+    scroll-behavior:smooth;
+}
+
+#career {
+    columns:2;
+    padding:0 5%;
+}
+#career p {
+    text-align:justify;
+    margin: 5% 5%
+}
+
+#navigation{
+    position:fixed;
+    width:100%;
+    background-color: white;
+    border:1px solid gray;
+    padding: 10px;
+    opacity:0.6;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+    color:green;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+p, li, td, th, a {
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content :space-evenly;
+}
+
+th {
+    background-color: blue;
+    border-radius: 10px;
+    color:white;
+    padding:5px;
+}
+
+tr{
+    background-color: white;
+    border-radius: 10px;
+}
+
+table{
+    border:none;
+}
