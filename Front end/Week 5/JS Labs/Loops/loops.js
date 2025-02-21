@@ -16,10 +16,6 @@ while(j<=5){
    j++; 
 }
 
-// let answer;
-// while(answer !== "yes"){
-//     answer= prompt("Do you want to continuer? (Y/N)");
-// }
 
 // Do while
 let k = 1;
