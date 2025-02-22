@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> My first Js site</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="action.js"></script>
+    </head>
+    <body id="body">
+        <h1 id="header">
+            Welcome <span id="Name">Visitor</span>, to my first JS site
+        </h1>
+
+        <p id="original">
+            This is the original statment
+        </p>
+
+        <button id = "but1" onclick="addName();">Add name</button>
+        <button id="changer" onclick="changeText()">Change Text</button>
+        <div>
+            <input type="text" id="Background">
+            <input type="color" id="colorPicker1" onchange="backgroundPicks()">
+            <button onclick="backgroundChanger()">Change background</button>
+        </div>
+        <div>
+            <input type="text" id="fontColor">
+            <input type="color" id="colorPicker2" onchange="fontPicks()">
+            
+            <button onclick="fontCChanger()">Change Font Colour </button>
+        </div>
+    </body>
+</html>

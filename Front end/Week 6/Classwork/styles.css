@@ -1,0 +1,15 @@
+h1 {
+    color:blue;
+
+}
+button{
+    padding:5px;
+    margin:5px;
+    border-radius:5px;
+    border:1px solid grey;
+}
+
+button:hover{
+    background-color:blue;
+    color:white;
+}
