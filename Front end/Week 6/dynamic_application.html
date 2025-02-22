@@ -38,4 +38,23 @@
         }
     </script>
      <script src="actions.js"></script>
+
+     <input type="text" id="colorInput" placeholder="Enter a color">
+    <button onclick="validateAndChange()">Change Background</button>
+
+    <script>
+    function isValidColor(color) {
+        return CSS.supports("color", color);
+    }
+
+    function validateAndChange() {
+        const colorInput = document.getElementById("colorInput").value;
+        if (isValidColor(colorInput)) {
+            document.body.style.backgroundColor = colorInput;
+        } else {
+            alert("Invalid color! Please enter a valid color name or code.");
+        }
+    }
+    </script>
+
 </body>
