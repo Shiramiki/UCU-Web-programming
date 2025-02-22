@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Dynamic Application
+    </title>
+   
+</head>
+
+<body onload="greet()" id="body">
+    <p>
+        Hello World
+    </p>
+
+    <button onclick="alert('Hello World')"> Click me</button>
+
+    <p id ="text">
+        This is my first HTML, CSS and Javascript Fusion
+    </p>
+
+    <button onclick ="document.getElementById('text').innerHTML='I am texting inline Javascript' ">Change Text</button>
+    <button id ="click">Internal JS Click</button>
+    <button id ="tab">Trial Button</button>
+    <script>
+        const clickButton =document.getElementById("click");
+        
+        function greet(){
+            alert("Welcome to the dynamic World")
+        }
+        clickButton.onclick = function(){
+            alert("button was clicked")
+        }
+
+        clickButton.onmouseover = function(){
+            clickButton.style.color ="red"
+        }
+        clickButton.onmouseout = function(){
+            clickButton.style.color ="yellow"
+        }
+    </script>
+     <script src="actions.js"></script>
+</body>
