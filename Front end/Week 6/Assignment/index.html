@@ -218,7 +218,7 @@
         
     </div>
 
-    <!-- <div id = "Contact"> -->
+    <div id = "Contact">
         <center>
             <h2>
                 <u>Contact Me</u>
@@ -227,12 +227,22 @@
     
         <div>
             <form>
-                <input
+                <label for="name">Name</label>
+                <input type="text" id ="name" name ="name" required>
+                <label for ="email"> Email</label>
+                <input id ="email" name ="email" required>
+                <label for ="subject">subject</label>
+                <input type="text" id = "subjet" name = "subject" required>
+                <label for = "message">Message</label>
+                <textarea id = "message" name = "message" rows ="4" required>
+                
+                </textarea>
+                <button tyoe ="submit">Send Message</button>
             </form>
     
         </div>
         
-        <div>
+        <div id = "links">
             <a href = "mailto:mbeizacokila@gmail.com">Email: mbeicacokila@gmail.com</a>
             <br>
             <a href = "https://www.linkedin.com/in/mbeiza-rachel-isooba-73969a54/"> LinkedIn</a>

@@ -94,7 +94,14 @@ html, body {
     padding-top:10%;
 }
 #Contact{
-    padding-top:4%;
+    padding-top:2%;
+}
+
+#links{
+    width:70%;
+    /* border:1px solid purple; */
+    margin:10px auto;
+    text-align:center;
 }
 
 
@@ -114,6 +121,7 @@ h1 {
 
 p, li, td, th, a {
     font-size: 20px;
+    color:#2C7A7B;
 }
 
 a{
@@ -138,4 +146,35 @@ tr{
 
 table{
     border:none;
+}
+form, label{
+    margin:0 auto;
+    background-color:#F6C177;
+    box-sizing:border-box;
+}
+
+form{
+    border: 2px inset gray;
+    border-radius:10px;
+    padding:10px 2%;
+    width: 35%;
+    box-shadow: 5px 5px gray;
+}
+input, textarea{
+    display:block;
+    border-radius:10px;
+    width: 70%;
+    margin:auto;
+    height:30px;
+}
+
+textarea{
+    height: 100px;
+}
+
+button{
+    margin:15px 34%;
+    padding:10px;
+    border-radius:5px;
+    text-align:center;
 }
