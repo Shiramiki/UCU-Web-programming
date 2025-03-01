@@ -5,6 +5,9 @@
     </title>
 
     <link rel="stylesheet" type = "text/css" href ="style.css"> 
+    <script src ="index.js">
+
+    </script>
         
      </style>
 </head>
@@ -31,12 +34,16 @@
             <a href =#Contact>
                 Contact Me
             </a>
+
+            <button id ="darkModeToggle" onclick="tog()">
+               Dark mode
+            </button>
         </nav>
     </div>
    <div id = "Header">
         <div id = "name">
         <center>
-            <h1 style="color: #333333;">
+            <h1 class = "changer" style="color: #333333;">
                 <i>Isooba Mbeiza Rachel</i>
             </h1>
 
@@ -60,7 +67,7 @@
 
     <div id = "personals">
         <div id ="details">
-            <h2 id = "main_title">
+            <h2 class = "changer" id = "main_title">
                 Personal Details
             </h2>
         
@@ -102,7 +109,7 @@
     
        
     <div id = "Hobbies">
-        <h2>
+        <h2 class = "changer">
             My Hobbies
         </h2>   
     
@@ -132,7 +139,7 @@
         
     </div>
     
-    <div id = "Results">
+    <div class = "changer" id = "Results">
         <h2>
             My Results
         </h2>
@@ -188,8 +195,8 @@
         
     </div>
 
-    <div id = "myCareer">
-        <h2>
+    <div class = "changer" id = "myCareer">
+        <h2 class = "changer">
             Career Goals
         </h2>
     
@@ -220,7 +227,7 @@
 
     <div id = "Contact">
         <center>
-            <h2>
+            <h2 class = "changer">
                 <u>Contact Me</u>
             </h2>
         </center>
