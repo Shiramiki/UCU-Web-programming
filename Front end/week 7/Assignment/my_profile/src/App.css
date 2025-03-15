@@ -1,38 +1,202 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+}
+html, body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding:0;
+  background-color:beige;
+  display:flex;
+  overflow:hidden;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#Header {
+  z-index:1;
+  background-color:#F9FAFB;
+  padding: 10%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#personals {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content:space-evenly;
+
+}
+#personals div{
+  /* border : 1px solid blue; */
+  width:45%;
+  padding-top: 5%;
+  
+  /* height:fit; */
+  
 }
 
-.App-link {
-  color: #61dafb;
+#personals h2 {
+  text-align:left;
+}
+#Main{
+  /* border:1px solid brown; */
+  width:100%;
+  display:flex;
+  justify-content:center;
+  padding: 5px;
+  
+}
+#Media {
+  width :560px; 
+  height:315px;
+  border: 1px solid red;
+  overflow:hidden;
+  scroll-behavior:smooth;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#career {
+  display: flex;
+  padding-top:2%;
+  justify-content:space-evenly;
+  align-items:center;
+}
+
+#career p {
+  text-align:justify;
+  margin-left: 2%;
+  flex:0 0 27%;
+}
+
+#navigation{
+  position:fixed;
+  width:100%;
+  background-color:#FBD5D5;
+  border:1px solid gray;
+  padding: 20px;
+  height:65px;
+  opacity:0.6;
+  z-index:2;
+}
+
+#Header, #personals, #Hobbies, #Results, #myCareer, #Contact {
+  height: 100vh;
+  width:100vw;
+  flex:0 0 100%;
+   
+}
+
+#Hobbies{
+  background-color:#F9FAFB;
+  padding-top:3%;
+}
+
+#myCareer{
+  padding-top:2%;
+  background-color:#F9FAFB;
+}
+
+#Results{
+  padding-top:6%;
+}
+#Contact{
+  padding-top:1%;
+}
+
+#links{
+  width:70%;
+  /* border:1px solid purple; */
+  margin:10px auto;
+  text-align:center;
+}
+
+
+img{
+  margin-top:15%;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+  color:#333333;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+p, li, td, th, a {
+  font-size: 20px;
+  color:#2C7A7B;
+}
+
+a{
+  color:#2C7A7B;
+  padding-left:5px;
+}
+nav {
+  display: flex;
+  justify-content :space-evenly;
+}
+
+th {
+  background-color: blue;
+  border-radius: 10px;
+  color:white;
+  padding:5px;
+}
+
+tr{
+  background-color: white;
+  border-radius: 10px;
+}
+
+table{
+  border:none;
+}
+form, label{
+  margin:0 auto;
+  background-color:#F6C177;
+  box-sizing:border-box;
+}
+
+form{
+  border: 2px inset gray;
+  border-radius:10px;
+  padding:10px 2%;
+  width: 35%;
+  box-shadow: 5px 5px gray;
+}
+input, textarea{
+  display:block;
+  border-radius:10px;
+  width: 70%;
+  margin:auto;
+  height:30px;
+}
+
+textarea{
+  height: 100px;
+}
+
+#buttonContact{
+  margin:15px 34%;
+  padding:10px;
+  border-radius:5px;
+  text-align:center;
+}
+
+
+/* Dark Mode Styles */
+[data-theme="dark"] {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+[data-theme="dark"] #navigation {
+  background-color: #444444;
+}
+
+/* Light Mode Styles */
+[data-theme="light"] {
+  background-color: beige;
+  color: #333;
+}
+
+[data-theme="light"] #navigation {
+  background-color: #fbd5d5;
 }
