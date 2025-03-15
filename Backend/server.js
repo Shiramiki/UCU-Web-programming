@@ -1,4 +1,5 @@
 import express, { json } from "express"
+import db from "./week 7/models/config.cjs";
 
 
 const app = express()
@@ -20,7 +21,7 @@ app.get("/hello", (req,res) =>{
 })
 
 //hello is our endpoint (line 17)   when the user reches the endpoint send this response
-//Thinderman and postman test our endpoints to ensure that thet are runing
+//Thinderman and postman test our endpoints to ensure that that are runing
 // Listens for a port (response or request)
 //Javascript is a client side language
 //JSON is Javascript Object Notation
