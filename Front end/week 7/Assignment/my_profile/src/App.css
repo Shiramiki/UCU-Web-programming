@@ -1,15 +1,16 @@
 *{
   box-sizing: border-box;
 }
-html, body {
+html, body, #body {
   scroll-behavior: smooth;
   margin: 0;
   padding:0;
-  background-color:beige;
+  /* background-color:beige; */
   display:flex;
   overflow:hidden;
   
 }
+
 
 #Header {
   z-index:1;
@@ -70,7 +71,7 @@ html, body {
   padding: 20px;
   height:65px;
   opacity:0.6;
-  z-index:2;
+  z-index:10000;
 }
 
 #Header, #personals, #Hobbies, #Results, #myCareer, #Contact {
@@ -180,23 +181,170 @@ textarea{
   text-align:center;
 }
 
+/* Center the login form */
+#login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width:100vw;
+  background-color: #f0f2f5; /* Light background color */
+}
+
+/* Style the login form */
+#login-form {
+  background-color: #ffffff; /* White background */
+  padding: 2rem; /* Padding inside the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 100%;
+  max-width: 400px; /* Maximum width of the form */
+  margin:auto;
+}
+
+/* Style form headings */
+#login-form h2 {
+  margin-bottom: 1.5rem; /* Space below the heading */
+  font-size: 1.5rem; /* Font size */
+  color: #333333; /* Dark text color */
+  text-align: center; /* Centered text */
+}
+
+/* Style input fields */
+#login-form input {
+  width: 100%; /* Full width */
+  padding: 0.75rem; /* Padding inside inputs */
+  margin-bottom: 1rem; /* Space below inputs */
+  border: 1px solid #cccccc; /* Light gray border */
+  border-radius: 4px; /* Slightly rounded corners */
+  font-size: 1rem; /* Font size */
+}
+
+/* Style the login button */
+#login-form button {
+  width: 100%; /* Full width */
+  padding: 0.75rem; /* Padding inside the button */
+  background-color: #007bff; /* Bootstrap primary color */
+  border: none; /* No border */
+  border-radius: 4px; /* Slightly rounded corners */
+  color: #ffffff; /* White text */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Change button color on hover */
+#login-form button:hover {
+  background-color: #0056b3; /* Darker shade of blue */
+}
 
 /* Dark Mode Styles */
-[data-theme="dark"] {
+[data-theme="dark"] #body{
   background-color: #1e1e1e;
   color: #fff;
 }
+
+/* Light Mode Styles */
+[data-theme="light"] #body{
+  background-color: beige;
+  color: #333;
+}
+
+[data-theme="dark"] , #Header{
+  background-color: #1e1e1e;
+  color: #fff;
+}
+/* Light Mode Styles */
+[data-theme="light"] #Header{
+  background-color: beige;
+  color: #333;
+}
+
+[data-theme="dark"] , #personals{
+  background-color: #1e1e1e;
+  color: #fff;
+}
+/* Light Mode Styles */
+[data-theme="light"] #personals{
+  background-color: beige;
+  color: #333;
+}
+
+[data-theme="dark"] , #Results{
+  background-color: #1e1e1e;
+  color: #fff;
+}
+/* Light Mode Styles */
+[data-theme="light"] #Results{
+  background-color: beige;
+  color: #333;
+}
+
+[data-theme="dark"] , #Hobbies{
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+/* Light Mode Styles */
+[data-theme="light"] #Hobbies{
+  background-color: beige;
+  color: #333;
+}
+
+[data-theme="dark"] , #myCareer{
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+/* Light Mode Styles */
+[data-theme="light"] #myCareer{
+  background-color: beige;
+  color: #333;
+}
+
+[data-theme="dark"] , #Contact{
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+/* Light Mode Styles */
+[data-theme="light"] #Contact{
+  background-color: beige;
+  color: #333;
+}
+
 
 [data-theme="dark"] #navigation {
   background-color: #444444;
 }
 
-/* Light Mode Styles */
-[data-theme="light"] {
-  background-color: beige;
-  color: #333;
-}
+
 
 [data-theme="light"] #navigation {
   background-color: #fbd5d5;
 }
+
+
+[data-theme="dark"] #login-container {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+/* Light Mode Styles */
+[data-theme="light"] #login-container{
+  background-color: beige;
+  color: blue;
+  border:1px solid blue;
+}
+
+[data-theme="dark"] #login-form {
+  background-color: #444444;
+  color: blue;
+}
+
+/* Light Mode Styles */
+[data-theme="light"] #login-form{
+  background-color: beige;
+  color: #333;
+}
+
+

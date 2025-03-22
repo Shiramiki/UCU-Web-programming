@@ -1,0 +1,253 @@
+import './App.css';
+import React from "react";
+import YouTubeEmbed from "./components/iframe";
+import DarkModeToggle from "./components/DarkModeTogle";
+
+function App() {
+  return (
+  <body>
+    <div id = "navigation">
+        <nav>
+            <a href ="#Header" h>Home</a>
+            <a href = "#personals">
+                About Me
+            </a>
+            <a href = "#Hobbies">
+                Hobbies
+            </a>
+    
+            <a href="#Results">
+                Marks
+            </a>
+    
+            <a href = "#myCareer">
+                Career
+            </a>
+    
+            <a href ="#Contact">
+                Contact Me
+            </a>
+
+            <DarkModeToggle/>
+
+        </nav>
+    </div>
+
+    <div id = "Header">
+        <div id = "name">
+        <center>
+            <h1 class = "changer">
+                <i>Isooba Mbeiza Rachel</i>
+            </h1>
+
+        </center>
+        </div>
+
+
+        <div id = "intoduction">
+        
+            <p>
+                I am a Computer Science student at <u>Uganda Christian University</u> with a passion for leadership, 
+                innovation, and technology. I serve as the Minister of Academics Research and ICT at 
+            <u> UCU Honours College </u>and a <u>writing center coach at UCU</u>, helping students improve their writing skills. 
+                I am also actively involved in robotics, software development, and sharing my tech journey through 
+                platforms like GitHub, Medium and TechGeeks.
+
+            </p>
+        </div>
+  </div>
+    
+
+    <div id = "personals">
+        <div id ="details">
+            <h2 class = "changer" id = "main_title">
+                Personal Details
+            </h2>
+        
+            <ul>
+                <li>
+                  <b> Name:</b> Isooba Mbeiza Rachel
+                </li>
+        
+                <li>
+                    <b>StudentID:</b>B23293 / M23B23/047
+                </li>
+                <li>
+                    <b>Course and Year:</b> BSCS 2-2
+                </li>
+                <li>
+                    <b>Hobbies and Interests</b>
+                    <ul>
+                        <li>Reading</li>
+                        <li>Writing</li>
+                        <li>Night Stralls</li>
+                        <li>Listening to music</li>
+                        <li>Kniting</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+       <div id = "image">
+        <center>
+        <img src = "Me.jpeg" width= "560" alt="Me" title="Isooba Rachel"></img>
+    
+        </center>   
+        
+      </div>
+        
+    </div>
+    <div id = "Hobbies">
+        <h2 class = "changer">
+            My Hobbies
+        </h2>   
+        <center>
+        <div>
+        <a href = "#local">Previous</a>
+        <a href = "#online">Next</a> 
+            
+      </div>
+        </center>
+    
+        <div id = "Main">
+            <div  id ="Media">  
+                <center>
+        
+                    <video id ="local" controls  width = "560" height="315">
+                        <source  src = "Media/2020 SDGs CHALLENGE, UNITED FOR CHANGE LS, LESOTHO, SDG5.mp4" type ="video/mp4"></source>
+                    </video>
+            
+                    <YouTubeEmbed></YouTubeEmbed>
+                </center>
+            </div>
+            
+        </div>
+            
+     
+        
+    </div>
+    
+    <div class = "changer" id = "Results">
+        <h2>
+            My Results
+        </h2>
+    
+        <center>
+            <table border="1">
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Title</th>
+                    <th>Grade</th>
+                    <th>Course Credits</th>            
+                </tr>
+                <tr>
+                    <td>ICT1102</td>
+                    <td>Essential Hardware and Software Concepts</td>
+                    <td>5</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>ICT1103</td>
+                    <td>Fundamentals of Computing</td>
+                    <td>5</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>CSC1101</td>
+                    <td>Structured Programming</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>LNG1101</td>
+                    <td>Writing and Study Skills</td>
+                    <td>5</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>TBS1103</td>
+                    <td>Understanding the Old Testament</td>
+                    <td>5</td>
+                    <td>3</td>
+                </tr>
+            </table>
+            <br></br>
+    
+    
+            
+            <a href ="https://www.winxclub.com/en" title="WinxClub">Winxclub</a>
+            <br></br>
+            <a href ="https://cse.ucu.ac.ug/" title = "UCU DCT">UCU Department of Computing and Technology</a>
+    
+        </center>
+        
+    </div>
+
+    <div class = "changer" id = "myCareer">
+        <h2 class = "changer">
+            Career Goals
+        </h2>
+    
+       <div id ="career">
+            <p>
+                My career goal is to build a <u>tech business that drives innovation in Africa</u>’s tech industry while also 
+                becoming a <u>tech educator</u> to bridge the knowledge gap in technology. Having observed differences in 
+                ambition and personal drive across communities, I am passionate about fostering a culture of excellence, 
+                ethical leadership, and skill development in the tech space. 
+            </p>
+            <p>
+                Through my business, I aim to provide AI-driven solutions, digital transformation services, and 
+                entrepreneurship support to empower 
+                African startups and industries. As a tech educator, I aspire to mentor and train the next generation 
+                of innovators by developing accessible learning programs, shaping tech curricula, and advocating for 
+                increased participation in STEM.        
+            </p>
+            
+            <p>
+                By combining business and education, I seek to create a sustainable 
+                ecosystem that not only advances Africa’s technological landscape but also nurtures future leaders 
+                who will continue to push the boundaries of innovation.
+            </p>
+       </div>
+    
+        
+    </div>
+
+    <div id = "Contact">
+        <center>
+            <h2 class = "changer">
+                <u>Contact Me</u>
+            </h2>
+        </center>
+    
+        <div>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id ="name" name ="name" required></input>
+                <label for ="email"> Email</label>
+                <input id ="email" name ="email" required></input>
+                <label for ="subject">subject</label>
+                <input type="text" id = "subjet" name = "subject" required></input>
+                <label for = "message">Message</label>
+                <textarea id = "message" name = "message" rows ="4" required></textarea>
+
+                <button tyoe ="submit">Send Message</button>
+            </form>
+    
+        </div>
+        
+        <div id = "links">
+            <a href = "mailto:mbeizacokila@gmail.com">Email: mbeicacokila@gmail.com</a>
+            <br></br>
+            <a href = "https://www.linkedin.com/in/mbeiza-rachel-isooba-73969a54/"> LinkedIn</a>
+            <a href="https://x.com/IsoobaMRachel">Twitter</a>
+            <a href ="https://github.com/Shiramiki">Github</a>
+            <a href = "mailto:mbeizacokila@gmail.com"> Email me</a>
+        </div>
+    </div>
+  </body>
+
+    
+  );
+}
+
+export default App;

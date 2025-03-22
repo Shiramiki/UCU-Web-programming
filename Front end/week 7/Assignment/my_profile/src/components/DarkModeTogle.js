@@ -7,6 +7,7 @@ const DarkModeToggle = () => {
   // Update body and button text based on the current mode
   useEffect(() => {
     const body = document.body;
+  
     if (isDarkMode) {
       body.setAttribute("data-theme", "dark");
     } else {
