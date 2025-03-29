@@ -12,6 +12,7 @@ const Navbar = () => {
       <Link to="/contact">Contact Me</Link>
       <DarkModeToggle />
     </nav>
+//Outlet
   );
 };
 
